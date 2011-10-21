@@ -76,7 +76,7 @@ body.platform-linux .monospace, body.platform-linux .source-code {
 #elements-content .webkit-javascript-regexp {}
 
 
-/* begin JS console */
+/* JS console -- messy work in progress
 
 #console-messages {
   background-color: black;
@@ -95,3 +95,4 @@ body.platform-linux .monospace, body.platform-linux .source-code {
 
 
 
+*/
