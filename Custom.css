@@ -79,7 +79,19 @@ body.platform-linux .monospace, body.platform-linux .source-code {
 /* begin JS console */
 
 #console-messages {
-  background-color: #000;
+  background-color: black;
+}
+
+.console-message {
+  background-color: #eee;
   color: lime;
 }
+
+#console-group-messages .section .header .title {
+  color: #F60;
+}
+
+
+
+
 
