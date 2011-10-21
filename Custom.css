@@ -9,7 +9,10 @@ body.platform-linux .monospace, body.platform-linux .source-code {
     font-size: 20px !important;
 }
 /* allegedly, textmate vibrant ink theme is copied at https://gist.github.com/1170204 */
-/* however, I couldn't get it to work */
+/* however, I couldn't get it to work. I did get cool colors on the element inspector, */
+/* but not the JS console, which just seems like the ass-backwardest priorities ever, */
+/* but it would still be a really cool hack were it not for the fact that I only get the */
+/* cool colors on mouseover. so, still something of a mystery there, really. */
 
 
 
