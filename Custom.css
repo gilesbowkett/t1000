@@ -8,12 +8,78 @@ body.platform-windows .monospace, body.platform-windows .source-code ,
 body.platform-linux .monospace, body.platform-linux .source-code {
     font-size: 20px !important;
 }
-/* allegedly, textmate vibrant ink theme is copied at https://gist.github.com/1170204 */
-/* however, I couldn't get it to work. I did get cool colors on the element inspector, */
-/* but not the JS console, which just seems like the ass-backwardest priorities ever, */
-/* but it would still be a really cool hack were it not for the fact that I only get the */
-/* cool colors on mouseover. so, still something of a mystery there, really. */
+
+/* textmate vibrant ink theme copied at https://gist.github.com/1170204 */
+
+/* this ONLY works for element inspector unfortunately, not JS console */
 
 
+#elements-content { background: #000 !important; }
 
+#element-content .source-code { background: #000 !important; }
+#elements-content .highlight { color: blue;}
+#elements-content .selection {}
+#elements-content .selection.selected {}
+#elements-content .parent {}
+
+/*.outline-disclosure ol:focus li.parent.expanded.selected::before*/
+#elements-content li.parent::before {
+  content: url('chrome-devtools://devtools/Images/treeRightTriangleWhite.png') !important; }
+#elements-content li.parent.expanded::before {
+  content: url('chrome-devtools://devtools/Images/treeDownTriangleWhite.png') !important;}
+#elements-content.source-code .selected, #elements-content.source-code .hovered.selected {
+  background: #444659 !important;
+}
+#elements-content.source-code .hovered { background: #2a2b3e !important;}
+
+
+/**********************************************/
+/* HTML
+/**********************************************/
+#elements-content .webkit-html-comment { color: rgb(153,51,204) !important;}
+#elements-content .webkit-html-doctype {}
+#elements-content .webkit-html-tag { color: rgb(255,102,0) !important;}
+#elements-content .webkit-html-tag-name {}
+#elements-content .webkit-html-attribute {}
+#elements-content .webkit-html-attribute-name { color: rgb(153,204,153) !important;}
+#elements-content .webkit-html-attribute-value { color: rgb(0,255,0) !important;}
+#elements-content .webkit-html-external-link {} 
+#elements-content .webkit-html-resource-link {}
+#elements-content .webkit-html-text-tag {}
+#elements-content .webkit-html-text-node { color: #fff !important;}
+#elements-content .webkit-html-css-node { color: #fff !important;}
+#elements-content .webkit-html-js-node { color: #c2c3c3 !important;}
+
+
+/**********************************************/
+/* CSS
+/**********************************************/
+#elements-content .webkit-css-comment { color: rgb(153,51,204) !important;}
+#elements-content .webkit-css-url { color: rgb(0,255,0) !important;}
+#elements-content .webkit-css-color { color: #fff !important;}
+#elements-content .webkit-css-selector { color: rgb(255,102,0) !important;} 
+#elements-content .webkit-css-property { color: rgb(153,153,102) !important;}
+#elements-content .webkit-css-number { color: rgb(51,153,153) !important;}
+#elements-content .webkit-css-keyword { color: #fff !important;}
+#elements-content .webkit-css-string { color: rgb(0,255,0) !important;}
+#elements-content .webkit-css-important { color: rgb(204,204,51) !important;}
+
+
+/**********************************************/
+/* JavaScript
+/**********************************************/
+#elements-content .webkit-javascript-comment {}
+#elements-content .webkit-javascript-keyword { color: #d97640 !important;}
+#elements-content .webkit-javascript-ident { color: #d97640 !important;}
+#elements-content .webkit-javascript-string {}
+#elements-content .webkit-javascript-number {}
+#elements-content .webkit-javascript-regexp {}
+
+
+/* begin JS console */
+
+#console-messages {
+  background-color: #000;
+  color: lime;
+}
 
